@@ -1,6 +1,6 @@
 import uuid
 import datetime
-from app.settings import db
+from aiohttp_homework.settings import db
 
 
 class User(db.Model):

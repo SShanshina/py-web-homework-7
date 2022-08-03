@@ -1,6 +1,6 @@
 import json
 import pydantic
-from app.settings import web
+from aiohttp_homework.settings import web
 
 
 def validation(unvalidated_data: dict, validation_model):

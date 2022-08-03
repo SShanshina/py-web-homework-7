@@ -1,10 +1,10 @@
 import json
 import bcrypt
-from app.settings import web
-from app.validation import validation, CreateUser, CreateAdvertisement
-from app.models import User, Advertisement
-from app.handlers import get_object_or_404, json_response
-from app.authorization import check_token, check_authorization
+from aiohttp_homework.settings import web
+from aiohttp_homework.validation import validation, CreateUser, CreateAdvertisement
+from aiohttp_homework.models import User, Advertisement
+from aiohttp_homework.handlers import get_object_or_404, json_response
+from aiohttp_homework.authorization import check_token, check_authorization
 from asyncpg.exceptions import UniqueViolationError
 
 

@@ -1,8 +1,8 @@
 import json
 import bcrypt
-from app.settings import web
-from app.models import User, Token
-from app.handlers import json_response
+from aiohttp_homework.settings import web
+from aiohttp_homework.models import User, Token
+from aiohttp_homework.handlers import json_response
 
 
 async def login(request: web.Request):

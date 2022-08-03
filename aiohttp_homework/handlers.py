@@ -1,5 +1,5 @@
 import json
-from app.settings import web
+from aiohttp_homework.settings import web
 
 
 async def get_object_or_404(model, *criterion):

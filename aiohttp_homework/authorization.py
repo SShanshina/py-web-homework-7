@@ -1,6 +1,6 @@
 import json
-from app.settings import web
-from app.models import User, Advertisement, Token
+from aiohttp_homework.settings import web
+from aiohttp_homework.models import User, Advertisement, Token
 
 
 async def check_token(headers: dict):
