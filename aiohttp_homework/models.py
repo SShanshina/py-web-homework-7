@@ -43,6 +43,6 @@ class Advertisement(db.Model):
 class Token(db.Model):
 
     __tablename__ = 'tokens'
-    id = db.Column(db.String, default=str(uuid.uuid4()), primary_key=True)
+    id = db.Column(db.String, default=lambda: str(uuid.uuid4()), primary_key=True)
     created_at = db.Column(db.DateTime, default=datetime.datetime.utcnow())
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
